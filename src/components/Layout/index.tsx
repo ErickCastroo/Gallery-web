@@ -1,11 +1,22 @@
 import { Link, Outlet } from 'react-router-dom'
 
+import { useModal } from '@/context/modalContext'
+
 import { BsImages } from 'react-icons/bs'
 import { LiaUserFriendsSolid } from 'react-icons/lia'
 import { IoSettingsOutline } from 'react-icons/io5'
 
+import { ModalSettings } from '@/components/ModalSettings'
 
 function Layout() {
+  const { openModal } = useModal()
+
+  const handleSettingsClick = () => {
+    openModal(<ModalSettings closeModal={function (): void {
+      throw new Error('Function not implemented.')
+    } } />) // sin props
+  }
+
   return (
     <>
       <div className='flex flex-col h-screen w-full bg-gray-100 dark:bg-gray-900'>
@@ -25,12 +36,15 @@ function Layout() {
               <LiaUserFriendsSolid />
               <span className='text-xs'>About</span>
             </Link>
-            <Link to='/contact' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+            <button
+              onClick={handleSettingsClick}
+              className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
               <IoSettingsOutline />
               <span className='text-xs'>Settings</span>
-            </Link>
+            </button>
           </nav>
         </header>
+
         <main className='flex-grow overflow-y-auto p-4 bg-Background'>
           <Outlet />
         </main>
@@ -44,10 +58,12 @@ function Layout() {
             <LiaUserFriendsSolid />
             <span className='text-xs'>About</span>
           </Link>
-          <Link to='/contact' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+          <button
+            onClick={handleSettingsClick} // <-- también aquí si quieres abrir desde mobile
+            className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <IoSettingsOutline />
             <span className='text-xs'>Settings</span>
-          </Link>
+          </button>
         </footer>
       </div>
     </>
