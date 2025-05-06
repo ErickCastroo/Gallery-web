@@ -1,6 +1,13 @@
 import { Masonrys } from '@/components/Masonrry'
 import { IoFilter } from 'react-icons/io5'
 
+import {
+  Popover,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import { MenuPop } from '@/components/MenuFilter'
+
+
 
 function Home() {
   return (
@@ -13,12 +20,12 @@ function Home() {
           className='w-full md:w-1/2 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-Primary'
           aria-label='Buscar Imagen..'
         />
-        <button
-          className='bg-Primary text-white rounded-lg flex items-center justify-center p-2 hover:bg-Secondary cursor-pointer transition duration-300 ease-in-out'
-          title='Filtrar resultados'
-        >
-          <IoFilter className='text-2xl' />
-        </button>
+        <Popover>
+          <PopoverTrigger className='flex items-center justify-center w-10 h-10 bg-Primary text-white rounded-lg hover:bg-Secondary focus:outline-none'>
+            <IoFilter size={20} />
+          </PopoverTrigger>
+          <MenuPop />
+        </Popover>
       </div>
       <Masonrys />
     </>
