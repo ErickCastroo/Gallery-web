@@ -1,3 +1,8 @@
 {
-  "titulo": "Gollery"
+  "titulo": "Gollery",
+  "configuracion": "configuracion",
+  "grupos": "Grupos",
+  "cuenta": "Cuenta",
+  "galeria": "Galeria",
+  "buscar": "Buscar imagen o concepto.."
 }

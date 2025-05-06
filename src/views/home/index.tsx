@@ -16,12 +16,11 @@ function Home() {
 
   return (
     <>
-      <h1 className='text-2xl font-semibold text-center my-4'> {t('titulo')} </h1>
       <Language />
       <div className='flex items-center justify-center gap-4 my-4'>
         <input
           type='text'
-          placeholder='Buscar Imagen...'
+          placeholder={t('buscar')}
           className='w-full md:w-1/2 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-Primary'
           aria-label='Buscar Imagen..'
         />

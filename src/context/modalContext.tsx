@@ -1,4 +1,3 @@
-// ModalContext.tsx
 import React, { createContext, useContext, useState } from 'react'
 import Modal from 'react-modal'
 
@@ -41,26 +40,20 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
-        style={{
-          content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-          },
-        }}
+        className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-xl shadow-2xl w-11/12 h-auto max-h-[80vh] overflow-y-auto'
         contentLabel='Global Modal'
+        overlayClassName='fixed inset-0 bg-black/50 backdrop-blur-sm'
       >
-        {content}
         <button
           onClick={closeModal}
-          className='mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600'
+          className='absolute top-2 right-2 w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500'
         >
-          Cerrar
+          X
         </button>
+        {content}
+
       </Modal>
     </ModalContext.Provider>
   )
 }
+

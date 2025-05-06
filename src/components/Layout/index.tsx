@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import { useModal } from '@/context/modalContext'
 
@@ -11,10 +12,12 @@ import { ModalSettings } from '@/components/ModalSettings'
 function Layout() {
   const { openModal } = useModal()
 
+  const { t } = useTranslation()
+
   const handleSettingsClick = () => {
     openModal(<ModalSettings closeModal={function (): void {
       throw new Error('Function not implemented.')
-    } } />) // sin props
+    } } />)
   }
 
   return (
@@ -23,24 +26,24 @@ function Layout() {
         <header className='shrink-0 flex items-center justify-between p-5  bg-Secondary text-white'>
           <h1 className='text-2xl md:ml-16'>
             <Link to='/'>
-              Goodllery
+              Gollery
             </Link>
           </h1>
 
           <nav className='hidden md:flex space-x-10 mr-16'>
             <Link to='/' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
               <BsImages />
-              <span className='text-xs'>Gallery</span>
+              <span className='text-xs'>{t('galeria')}</span>
             </Link>
             <Link to='/about' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
               <LiaUserFriendsSolid />
-              <span className='text-xs'>About</span>
+              <span className='text-xs'>{t('grupos')}</span>
             </Link>
             <button
               onClick={handleSettingsClick}
               className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
               <IoSettingsOutline />
-              <span className='text-xs'>Settings</span>
+              <span className='text-xs'>{t('configuracion')}</span>
             </button>
           </nav>
         </header>
@@ -52,17 +55,17 @@ function Layout() {
         <footer className='shrink-0 grid grid-cols-3 bg-Secondary h-20 items-center justify-items-center text-center text-white md:hidden'>
           <Link to='/' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <BsImages />
-            <span className='text-xs'>Gallery</span>
+            <span className='text-xs'>{t('galeria')}</span>
           </Link>
           <Link to='/about' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <LiaUserFriendsSolid />
-            <span className='text-xs'>About</span>
+            <span className='text-xs'>{t('grupos')}</span>
           </Link>
           <button
             onClick={handleSettingsClick} // <-- también aquí si quieres abrir desde mobile
             className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <IoSettingsOutline />
-            <span className='text-xs'>Settings</span>
+            <span className='text-xs'>{t('configuracion')}</span>
           </button>
         </footer>
       </div>

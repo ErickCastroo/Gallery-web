@@ -1,3 +1,8 @@
 {
-  "titulo": "Gollery"
+  "titulo": "Gollery",
+  "configuracion": "Settings",
+  "grupos": "Groups",
+  "cuenta": "Account",
+  "galeria": "Gallery",
+  "buscar": "Search image or concept..."
 }
