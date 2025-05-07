@@ -23,16 +23,16 @@ function Masonrys() {
 
   const images = GalleryImages.map((image) => (
     <div key={image.alt}>
-      <img src={image.img} alt={image.alt} className="w-full h-auto rounded-lg" />
+      <img src={image.img} alt={image.alt} className='w-full h-auto rounded-lg' />
     </div>
   ))
 
   return (
-    <div className="overflow-x-hidden">
+    <div className='overflow-x-hidden'>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column">
+        className='my-masonry-grid'
+        columnClassName='my-masonry-grid_column'>
         {images}
       </Masonry>
     </div>

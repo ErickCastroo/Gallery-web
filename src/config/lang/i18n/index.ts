@@ -1,5 +1,5 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
 
 import translationEN from '@/config/lang/en/en.json'
 import translationES from '@/config/lang/es/es.json'
@@ -16,6 +16,6 @@ i18n
     interpolation: {
       escapeValue: false, // React ya escapa valores por seguridad
     },
-  });
+  })
 
-export default i18n;
+export default i18n

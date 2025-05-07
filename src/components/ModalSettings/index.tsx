@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 
 import { ThemeSelector } from '@/components/ThemeSwitcher'
 import { Language } from '@/components/Lang'
@@ -8,53 +10,56 @@ import { LiaUserFriendsSolid, LiaUser } from 'react-icons/lia'
 import { MdOutlinePrivacyTip } from "react-icons/md"
 
 export function ModalSettings() {
+
+  const { t } = useTranslation()
+
   return (
     <div className='grid grid-cols-4 border-2 grid-rows-1 gap-2 m-4 rounded-md min-h-[60vh]'>
       <div className='col-start-1 row-start-1 col-span-1 row-span-1 border-r-2 p-4 h-full'>
 
         <div className='flex md:items-start flex-col space-y-4'>
-          <h1 className='text-sm md:text-2xl font-bold mb-5'>Settings</h1>
+          <h1 className='text-sm md:text-2xl font-bold mb-5'>{t('configuracion')}</h1>
 
           <hr className='w-full border' />
 
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <IoSettingsOutline size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>General</span>
+            <span className='ml-2 text-xl hidden md:inline'>{t('general')}</span>
           </button>
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <LiaUserFriendsSolid size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>Grupos</span>
+            <span className='ml-2 text-xl hidden md:inline'>{t('grupos')}</span>
           </button>
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <LiaUser size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>Cuenta</span>
+            <span className='ml-2 text-xl hidden md:inline'>{t('cuenta')}</span>
           </button>
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <MdOutlinePrivacyTip size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>Condiciones</span>
+            <span className='ml-2 text-xl hidden md:inline'>{t('privacidad')}</span>
           </button>
           <button className='flex items-start hover:text-red-600 hover:bg-red-100 hover:rounded-2xl hover:cursor-pointer w-full mt-36 p-2'>
             <IoLogOutOutline size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>Cerrar sesión</span>
+            <span className='ml-2 text-xl hidden md:inline'>{t('cerrarSesion')}</span>
           </button>
 
         </div>
       </div>
 
       <div className='col-start-2 row-start-1 col-span-3 row-span-1 rounded-md p-4 max-h-[60vh] overflow-y-auto'>
-        <h1>Themes</h1>
-        <p>Choose your favorite Theme</p>
+        <h1>{t('tema')}</h1>
+        <p>{t('elegirTema')}</p>
         <ThemeSelector />
         <hr className='border-1 mt-5' />
-        <h2 className='mt-5'>Language</h2>
-        <p>Choose your preferred language</p>
+        <h2 className='mt-5'>{t('idioma')}</h2>
+        <p>{t('idiomaPreferido')}</p>
         <div className='grid grid-cols-2 gap-4 mt-2'>
           <Language />
         </div>
 
         <hr className='border-1 mt-5' />
-        <h2 className='mt-5'>Notifications</h2>
-        <p>Manage your notifications</p>
+        <h2 className='mt-5'>{t('notificaciones')}</h2>
+        <p>{t('gestionaTusNotificaciones')}</p>
         <div className='gap-4 mt-2'>
           <Notifications />
         </div>

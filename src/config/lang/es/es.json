@@ -1,8 +1,22 @@
 {
   "titulo": "Gollery",
-  "configuracion": "configuracion",
+  "configuracion": "Configuración",
   "grupos": "Grupos",
   "cuenta": "Cuenta",
   "galeria": "Galeria",
-  "buscar": "Buscar imagen o concepto.."
+  "buscar": "Buscar imagen o concepto...",
+  "general": "General",
+  "idioma": "Idioma",
+  "tema": "Tema",
+  "temaClaro": "Tema claro",
+  "temaOscuro": "Tema oscuro",
+  "elegirTema": "Elija su tema preferido",
+  "idiomaPreferido": "Elija su idioma preferido",
+  "espanol": "Español",
+  "ingles": "Inglés",
+  "privacidad": "Privacidad",
+  "cerrarSesion": "Cerrar sesión",
+  "notificaciones": "Notificaciones",
+  "gestionaTusNotificaciones": "Gestiona tus notificaciones",
+  "marketingEmails": "Correos electrónicos de marketing"
 }

@@ -4,5 +4,19 @@
   "grupos": "Groups",
   "cuenta": "Account",
   "galeria": "Gallery",
-  "buscar": "Search image or concept..."
+  "buscar": "Search image or concept...",
+  "general": "General",
+  "idioma": "Language",
+  "tema": "Theme",
+  "temaClaro": "Light theme",
+  "temaOscuro": "Dark theme",
+  "elegirTema": "Choose your preferred theme",
+  "idiomaPreferido": "Choose your preferred language",
+  "espanol": "Spanish",
+  "ingles": "English",
+  "privacidad": "Privacy",
+  "cerrarSesion": "Logout",
+  "notificaciones": "Notifications",
+  "gestionaTusNotificaciones": "Manage your notifications",
+  "marketingEmails": "Marketing emails"
 }
