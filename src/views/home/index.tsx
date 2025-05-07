@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/popover"
 import { MenuPop } from '@/components/MenuFilter'
 import { Masonrys } from '@/components/Masonrry'
-import { Language } from '@/components/Lang'
 
 import { IoFilter } from 'react-icons/io5'
 
@@ -16,7 +15,6 @@ function Home() {
 
   return (
     <>
-      <Language />
       <div className='flex items-center justify-center gap-4 my-4'>
         <input
           type='text'
