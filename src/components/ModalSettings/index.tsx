@@ -17,23 +17,23 @@ export function ModalSettings() {
 
           <hr className='w-full border' />
 
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full py-2'>
+          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <IoSettingsOutline size={24} />
             <span className='ml-2 text-xl hidden md:inline'>General</span>
           </button>
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full py-2'>
+          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <LiaUserFriendsSolid size={24} />
             <span className='ml-2 text-xl hidden md:inline'>Grupos</span>
           </button>
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full py-2'>
+          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <LiaUser size={24} />
             <span className='ml-2 text-xl hidden md:inline'>Cuenta</span>
           </button>
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full py-2'>
+          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
             <MdOutlinePrivacyTip size={24} />
-            <span className='ml-2 text-xl hidden md:inline'>Terminos y condiciones</span>
+            <span className='ml-2 text-xl hidden md:inline'>Condiciones</span>
           </button>
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full py-2'>
+          <button className='flex items-start hover:text-red-600 hover:bg-red-100 hover:rounded-2xl hover:cursor-pointer w-full mt-36 p-2'>
             <IoLogOutOutline size={24} />
             <span className='ml-2 text-xl hidden md:inline'>Cerrar sesión</span>
           </button>
