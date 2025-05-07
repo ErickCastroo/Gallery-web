@@ -42,7 +42,7 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
-        className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:p-10 rounded-xl shadow-2xl w-11/12 h-auto max-h-[80vh] overflow-y-auto'
+        className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:p-10 rounded-xl shadow-2xl min-w-8/12 h-auto max-h-[80vh] overflow-y-auto'
         contentLabel='Global Modal'
         overlayClassName='fixed inset-0 bg-black/50 backdrop-blur-sm'
       >
