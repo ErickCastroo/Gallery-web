@@ -48,7 +48,7 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
       >
         <button
           onClick={closeModal}
-          className='hidden absolute top-2 right-2 w-8 h-8 rounded-full cursor-pointer md:flex items-center justify-center bg-white/50 hover:bg-white/80 transition-all duration-200 ease-in-out'
+          className='hidden absolute top-4 right-4 w-8 h-8 rounded-full cursor-pointer md:flex items-center justify-center bg-white/50 hover:bg-white/80 transition-all duration-200 ease-in-out'
         >
           <IoIosCloseCircleOutline className='w-8 h-8 text-gray-600 hover:text-gray-900' />
         </button>
