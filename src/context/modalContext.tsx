@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState } from 'react'
 import Modal from 'react-modal'
 
+import { IoIosCloseCircleOutline } from "react-icons/io"
+
 Modal.setAppElement('#root')
 
 interface ModalContextType {
@@ -40,18 +42,17 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
-        className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-xl shadow-2xl w-11/12 h-auto max-h-[80vh] overflow-y-auto'
+        className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:p-10 rounded-xl shadow-2xl w-11/12 h-auto max-h-[80vh] overflow-y-auto'
         contentLabel='Global Modal'
         overlayClassName='fixed inset-0 bg-black/50 backdrop-blur-sm'
       >
         <button
           onClick={closeModal}
-          className='absolute top-2 right-2 w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500'
+          className='hidden absolute top-2 right-2 w-8 h-8 rounded-full cursor-pointer md:flex items-center justify-center bg-white/50 hover:bg-white/80 transition-all duration-200 ease-in-out'
         >
-          X
+          <IoIosCloseCircleOutline className='w-8 h-8 text-gray-600 hover:text-gray-900' />
         </button>
         {content}
-
       </Modal>
     </ModalContext.Provider>
   )
