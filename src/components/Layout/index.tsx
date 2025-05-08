@@ -62,7 +62,7 @@ function Layout() {
             <span className='text-xs'>{t('grupos')}</span>
           </Link>
           <button
-            onClick={handleSettingsClick} // <-- también aquí si quieres abrir desde mobile
+            onClick={handleSettingsClick}
             className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <IoSettingsOutline />
             <span className='text-xs'>{t('configuracion')}</span>

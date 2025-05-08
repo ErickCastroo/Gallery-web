@@ -19,7 +19,6 @@ export function ThemeSelector() {
         root.classList.remove('dark')
       }
     }
-
     applyTheme(selected)
 
     if (selected === 'system') {
@@ -35,13 +34,13 @@ export function ThemeSelector() {
         <button
           key={theme.key}
           onClick={() => setSelected(theme.key)}
-          className={`w-6/12 h-5/6 border rounded-lg p-2 mt-4 flex flex-col items-center transition ${selected === theme.key
+          className={`w-6/12 h-5/6 border rounded-lg p-1.5 mt-4 flex flex-col items-center transition ${selected === theme.key
               ? 'ring-2 ring-Primary bg-blue-50'
               : 'hover:border-Secondary'
             }`}
         >
           <div className='w-full h-24 bg-Primary dark:bg-Secondary rounded mb-2'></div>
-          <div className='flex items-center gap-2'>
+          <div className='flex items-center'>
             <div
               className={`w-4 h-4 rounded-full border ${selected === theme.key ? 'bg-Primary' : ''
                 }`}

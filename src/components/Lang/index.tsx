@@ -11,7 +11,7 @@ function Language() {
     <div className='flex gap-4'>
       <button
         onClick={() => changeLanguage('es')}
-        className={`w-6/12 h-5/6 border rounded-lg p-2 mt-2 flex flex-col items-center transition ${i18n.language === 'es' ? 'ring-2 ring-Primary bg-blue-50' : 'hover:border-Secondary'
+        className={`md:w-6/12 h-5/6 border rounded-lg p-2 mt-2 flex flex-col items-center transition ${i18n.language === 'es' ? 'ring-2 ring-Primary bg-blue-50' : 'hover:border-Secondary'
           }`}
       >
         <div className='flex items-center gap-2'>
@@ -23,7 +23,7 @@ function Language() {
 
       <button
         onClick={() => changeLanguage('en')}
-        className={`w-6/12 h-5/6 border rounded-lg p-2 mt-2 flex flex-col items-center transition ${i18n.language === 'en' ? 'ring-2 ring-Primary bg-blue-50' : 'hover:border-Secondary'
+        className={`md:w-6/12 h-5/6 border rounded-lg p-2 mt-2 flex flex-col items-center transition ${i18n.language === 'en' ? 'ring-2 ring-Primary bg-blue-50' : 'hover:border-Secondary'
           }`}
       >
         <div className='flex items-center gap-2'>

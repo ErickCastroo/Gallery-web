@@ -18,12 +18,12 @@ export function ModalSettings() {
       <div className='col-start-1 row-start-1 col-span-1 row-span-1 border-r-2 p-4 h-full'>
 
         <div className='flex md:items-start flex-col space-y-4'>
-          <h1 className='text-sm md:text-2xl font-bold mb-5'>{t('configuracion')}</h1>
+          <h1 className='md:flex hidden md:text-2xl font-bold md:mb-5'>{t('configuracion')}</h1>
 
-          <hr className='w-full border' />
+          <hr className='w-full border hidden md:flex' />
 
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
-            <IoSettingsOutline size={24} />
+            <IoSettingsOutline  className=' md:flex' size={24} />
             <span className='ml-2 text-xl hidden md:inline'>{t('general')}</span>
           </button>
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
@@ -47,18 +47,18 @@ export function ModalSettings() {
       </div>
 
       <div className='col-start-2 row-start-1 col-span-3 row-span-1 rounded-md p-4 max-h-[60vh] overflow-y-auto'>
-        <h1>{t('tema')}</h1>
+        <h1 className='text-xl font-semibold'>{t('tema')}</h1>
         <p>{t('elegirTema')}</p>
         <ThemeSelector />
-        <hr className='border-1 mt-5' />
-        <h2 className='mt-5'>{t('idioma')}</h2>
+        <hr className='border-1 mt-4' />
+        <h2 className='mt-4 text-xl font-semibold'>{t('idioma')}</h2>
         <p>{t('idiomaPreferido')}</p>
         <div className='grid grid-cols-2 gap-4 mt-2'>
           <Language />
         </div>
 
-        <hr className='border-1 mt-5' />
-        <h2 className='mt-5'>{t('notificaciones')}</h2>
+        <hr className='border-1 mt-4' />
+        <h2 className='mt-4 text-xl font-semibold'>{t('notificaciones')}</h2>
         <p>{t('gestionaTusNotificaciones')}</p>
         <div className='gap-4 mt-2'>
           <Notifications />

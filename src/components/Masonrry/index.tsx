@@ -10,8 +10,8 @@ function Masonrys() {
   }
 
   // Genera imágenes random con diferentes alturas
-  const GalleryImages = Array.from({ length: 10 }).map((_, index) => {
-    const randomWidth = 300 // No importa tanto, ahora lo controlamos con CSS
+  const GalleryImages = Array.from({ length: 60 }).map((_, index) => {
+    const randomWidth = 300
     const randomHeight = Math.floor(Math.random() * 200) + 200
     const imgUrl = `https://picsum.photos/${randomWidth}/${randomHeight}?random=${index}`
 
