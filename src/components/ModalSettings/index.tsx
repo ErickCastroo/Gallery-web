@@ -22,7 +22,7 @@ export function ModalSettings() {
 
           <hr className='w-full border hidden md:flex' />
 
-          <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
+          <button className='flex items-start text-Primary bg-gray-300 rounded-2xl hover:cursor-pointer w-full p-2'>
             <IoSettingsOutline  className=' md:flex' size={24} />
             <span className='ml-2 text-xl hidden md:inline'>{t('general')}</span>
           </button>
