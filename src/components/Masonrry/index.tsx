@@ -1,6 +1,5 @@
 import Masonry from 'react-masonry-css'
 
-
 function Masonrys() {
   const breakpointColumnsObj = {
     default: 4,
@@ -9,7 +8,6 @@ function Masonrys() {
     640: 1
   }
 
-  // Genera imágenes random con diferentes alturas
   const GalleryImages = Array.from({ length: 60 }).map((_, index) => {
     const randomWidth = 300
     const randomHeight = Math.floor(Math.random() * 200) + 200
@@ -22,8 +20,12 @@ function Masonrys() {
   })
 
   const images = GalleryImages.map((image) => (
-    <div key={image.alt}>
-      <img src={image.img} alt={image.alt} className='w-full h-auto rounded-lg' />
+    <div key={image.alt} className="group overflow-hidden rounded-lg">
+      <img
+        src={image.img}
+        alt={image.alt}
+        className="w-full h-auto rounded-lg transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-90"
+      />
     </div>
   ))
 
