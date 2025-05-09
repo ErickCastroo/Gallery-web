@@ -1,7 +1,9 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 
 import { Home } from '@/views/home'
+import { Login } from '@/views/Login'
 import { Groups } from '@/views/Groups'
+import { Register } from '@/views/Register'
 import { Layout } from '@/components/Layout'
 
 const Router = () => {
@@ -13,6 +15,8 @@ const Router = () => {
           <Route path='/grupos' element={<Groups />} />
           <Route path='/*' element={<Home />} />
         </Route>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </BrowserRouter>
   )

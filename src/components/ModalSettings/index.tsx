@@ -7,7 +7,7 @@ import { Notifications } from '@/components/Notifications'
 
 import { IoSettingsOutline, IoLogOutOutline  } from 'react-icons/io5'
 import { LiaUserFriendsSolid, LiaUser } from 'react-icons/lia'
-import { MdOutlinePrivacyTip } from "react-icons/md"
+import { MdOutlinePrivacyTip } from 'react-icons/md'
 
 export function ModalSettings() {
 

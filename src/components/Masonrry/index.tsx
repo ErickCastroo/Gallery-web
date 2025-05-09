@@ -20,11 +20,11 @@ function Masonrys() {
   })
 
   const images = GalleryImages.map((image) => (
-    <div key={image.alt} className="group overflow-hidden rounded-lg">
+    <div key={image.alt} className='group overflow-hidden rounded-lg'>
       <img
         src={image.img}
         alt={image.alt}
-        className="w-full h-auto rounded-lg transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-90"
+        className='w-full h-auto rounded-lg transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-90'
       />
     </div>
   ))
