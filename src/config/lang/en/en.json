@@ -1,22 +1,31 @@
 {
-  "titulo": "Gollery",
-  "configuracion": "Settings",
-  "grupos": "Groups",
-  "cuenta": "Account",
-  "galeria": "Gallery",
-  "buscar": "Search image or concept...",
-  "general": "General",
-  "idioma": "Language",
-  "tema": "Theme",
-  "temaClaro": "Light theme",
-  "temaOscuro": "Dark theme",
-  "elegirTema": "Choose your preferred theme",
-  "idiomaPreferido": "Choose your preferred language",
-  "espanol": "Spanish",
-  "ingles": "English",
-  "privacidad": "Privacy",
-  "cerrarSesion": "Logout",
-  "notificaciones": "Notifications",
-  "gestionaTusNotificaciones": "Manage your notifications",
-  "marketingEmails": "Marketing emails"
+  "common": {
+    "buscar": "Search image or concept...",
+    "cerrarSesion": "Log out"
+  },
+  "menu": {
+    "titulo": "Gollery",
+    "configuracion": "Settings",
+    "grupos": "Groups",
+    "cuenta": "Account",
+    "galeria": "Gallery"
+  },
+  "configuracion": {
+    "general": "General",
+    "idioma": "Language",
+    "tema": "Theme",
+    "cerrarSesion": "Log out",
+    "temaClaro": "Light theme",
+    "temaOscuro": "Dark theme",
+    "elegirTema": "Choose your preferred theme",
+    "idiomaPreferido": "Choose your preferred language",
+    "privacidad": "Privacy",
+    "notificaciones": "Notifications",
+    "gestionaTusNotificaciones": "Manage your notifications",
+    "marketingEmails": "Marketing emails"
+  },
+  "idiomas": {
+    "espanol": "Spanish",
+    "ingles": "English"
+  }
 }

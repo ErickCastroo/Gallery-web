@@ -9,7 +9,7 @@ function Notifications() {
   return (
     <>
       <div className='bg-gray-50 dark:bg-Text min-w-5/6 h-14 rounded-md flex items-center justify-between p-4'>
-        <h1 className=''>{t('marketingEmails')}</h1>
+        <h1 className=''>{t('configuracion.marketingEmails')}</h1>
         <Switch />
       </div>
     </>

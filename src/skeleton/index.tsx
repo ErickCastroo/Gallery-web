@@ -4,6 +4,7 @@ import '@/index.css'
 const SkeletonMasonry: React.FC = () => {
   const skeletonItems = Array.from({ length: 12 });
 
+
   return (
     <div className="overflow-x-hidden">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

@@ -1,22 +1,31 @@
 {
-  "titulo": "Gollery",
-  "configuracion": "Configuración",
-  "grupos": "Grupos",
-  "cuenta": "Cuenta",
-  "galeria": "Galeria",
-  "buscar": "Buscar imagen o concepto...",
-  "general": "General",
-  "idioma": "Idioma",
-  "tema": "Tema",
-  "temaClaro": "Tema claro",
-  "temaOscuro": "Tema oscuro",
-  "elegirTema": "Elija su tema preferido",
-  "idiomaPreferido": "Elija su idioma preferido",
-  "espanol": "Español",
-  "ingles": "Inglés",
-  "privacidad": "Privacidad",
-  "cerrarSesion": "Cerrar sesión",
-  "notificaciones": "Notificaciones",
-  "gestionaTusNotificaciones": "Gestiona tus notificaciones",
-  "marketingEmails": "Correos de marketing"
+  "common": {
+    "buscar": "Buscar imagen o concepto...",
+    "cerrarSesion": "Cerrar sesión"
+  },
+  "menu": {
+    "titulo": "Gollery",
+    "configuracion": "Configuración",
+    "grupos": "Grupos",
+    "cuenta": "Cuenta",
+    "galeria": "Galeria"
+  },
+  "configuracion": {
+    "general": "General",
+    "idioma": "Idioma",
+    "tema": "Tema",
+    "cerrarSesion": "Cerrar sesión",
+    "temaClaro": "Tema claro",
+    "temaOscuro": "Tema oscuro",
+    "elegirTema": "Elija su tema preferido",
+    "idiomaPreferido": "Elija su idioma preferido",
+    "privacidad": "Privacidad",
+    "notificaciones": "Notificaciones",
+    "gestionaTusNotificaciones": "Gestiona tus notificaciones",
+    "marketingEmails": "Correos de marketing"
+  },
+  "idiomas": {
+    "espanol": "Español",
+    "ingles": "Inglés"
+  }
 }

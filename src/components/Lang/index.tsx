@@ -17,7 +17,7 @@ function Language() {
         <div className='flex items-center gap-2'>
           <div className={`w-4 h-4 rounded-full border ${i18n.language === 'es' ? 'bg-Primary' : ''
             }`}></div>
-          <span className='text-sm'>{t('espanol')}</span>
+          <span className='text-sm'>{t('idiomas.espanol')}</span>
         </div>
       </button>
 
@@ -29,7 +29,7 @@ function Language() {
         <div className='flex items-center gap-2'>
           <div className={`w-4 h-4 rounded-full border ${i18n.language === 'en' ? 'bg-Primary' : ''
             }`}></div>
-          <span className='text-sm'>{t('ingles')}</span>
+          <span className='text-sm'>{t('idiomas.ingles')}</span>
         </div>
       </button>
     </div>

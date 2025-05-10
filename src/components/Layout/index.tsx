@@ -32,17 +32,17 @@ function Layout() {
           <nav className='hidden md:flex space-x-10 mr-16'>
             <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <BsImages />
-              <span className='text-xs'>{t('galeria')}</span>
+              <span className='text-xs'>{t('menu.galeria')}</span>
             </Link>
             <Link to='/grupos' className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <LiaUserFriendsSolid />
-              <span className='text-xs'>{t('grupos')}</span>
+              <span className='text-xs'>{t('menu.grupos')}</span>
             </Link>
             <button
               onClick={handleSettingsClick}
               className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <IoSettingsOutline />
-              <span className='text-xs'>{t('configuracion')}</span>
+              <span className='text-xs'>{t('menu.configuracion')}</span>
             </button>
           </nav>
         </header>
@@ -52,17 +52,17 @@ function Layout() {
         <footer className='shrink-0 grid grid-cols-3 bg-Secondary dark:bg-SecondaryDark h-20 items-center justify-items-center text-center text-white dark:text-TextDark md:hidden'>
           <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <BsImages />
-            <span className='text-xs'>{t('galeria')}</span>
+            <span className='text-xs'>{t('menu.galeria')}</span>
           </Link>
           <Link to='/grupos' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <LiaUserFriendsSolid />
-            <span className='text-xs'>{t('grupos')}</span>
+            <span className='text-xs'>{t('menu.grupos')}</span>
           </Link>
           <button
             onClick={handleSettingsClick}
             className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark cursor-pointer'>
             <IoSettingsOutline />
-            <span className='text-xs'>{t('configuracion')}</span>
+            <span className='text-xs'>{t('menu.configuracion')}</span>
           </button>
         </footer>
       </div>
