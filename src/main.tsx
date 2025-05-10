@@ -1,13 +1,25 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import { Router } from './config/routes'
+import { ToastContainer } from 'react-toastify'
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
+
+
+import { Router } from '@/config/routes'
+import { ModalProvider } from '@/context/modalContext'
+
 import '@/config/lang/i18n'
-import { ModalProvider } from './context/modalContext'
+import './index.css'
+
+const queryClient = new QueryClient()
+
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+
+  <StrictMode >
     <ModalProvider>
-      <Router />
+      <QueryClientProvider client={queryClient}>
+        <Router />
+        <ToastContainer />
+      </QueryClientProvider>
     </ModalProvider>
-  </StrictMode>,
+  </StrictMode >,
 )

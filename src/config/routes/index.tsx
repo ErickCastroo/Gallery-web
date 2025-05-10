@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes } from 'react-router-dom'
+import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom'
 
 import { Home } from '@/views/home'
 import { Login } from '@/views/Login'
@@ -13,7 +13,8 @@ const Router = () => {
         <Route path='/' element={<Layout />}>
           <Route path='/home' element={<Home />} />
           <Route path='/grupos' element={<Groups />} />
-          <Route path='/*' element={<Home />} />
+          <Route path='*' element={<Navigate to='/home' replace />} />
+
         </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />

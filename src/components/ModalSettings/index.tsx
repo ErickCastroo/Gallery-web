@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useTranslation } from 'react-i18next'
 
 
@@ -9,8 +10,14 @@ import { IoSettingsOutline, IoLogOutOutline } from 'react-icons/io5'
 import { LiaUserFriendsSolid, LiaUser } from 'react-icons/lia'
 import { MdOutlinePrivacyTip } from 'react-icons/md'
 
-export function ModalSettings() {
 
+type ModalSettingsProps = {
+  closeModal: () => void
+}
+
+export function ModalSettings({ closeModal }: ModalSettingsProps) {
+
+  
   const { t } = useTranslation()
 
   return (

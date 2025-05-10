@@ -29,7 +29,6 @@ function Layout() {
               Gollery
             </Link>
           </h1>
-
           <nav className='hidden md:flex space-x-10 mr-16'>
             <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <BsImages />
@@ -47,11 +46,9 @@ function Layout() {
             </button>
           </nav>
         </header>
-
         <main className='flex-grow overflow-y-auto p-4 bg-Background dark:bg-BackgroundDark'>
           <Outlet />
         </main>
-
         <footer className='shrink-0 grid grid-cols-3 bg-Secondary dark:bg-SecondaryDark h-20 items-center justify-items-center text-center text-white dark:text-TextDark md:hidden'>
           <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <BsImages />

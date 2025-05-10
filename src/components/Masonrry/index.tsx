@@ -1,3 +1,7 @@
+import { useQuery } from '@tanstack/react-query'
+
+import { SkeletonMasonry } from '@/skeleton'
+
 import Masonry from 'react-masonry-css'
 
 function Masonrys() {
@@ -28,6 +32,23 @@ function Masonrys() {
       />
     </div>
   ))
+
+  const { data, isLoading } = useQuery({
+    queryKey: ['images'],
+    queryFn: () =>
+      new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(GalleryImages)
+        }, 2000)
+      }),
+  })
+
+  if (isLoading) {
+    return <div className=''><SkeletonMasonry/></div>
+  }
+  if (!data) {
+    return <div className='flex items-center justify-center h-screen'>No images found</div>
+  }
 
   return (
     <div className='overflow-x-hidden'>
