@@ -40,6 +40,10 @@ function Login() {
             if (isValid) {
               form.handleSubmit()
             }
+            else {
+              console.log('Form is not valid')
+
+            }
           }}
         >
           <div>

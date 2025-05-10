@@ -5,7 +5,7 @@ import { ThemeSelector } from '@/components/ThemeSwitcher'
 import { Language } from '@/components/Lang'
 import { Notifications } from '@/components/Notifications'
 
-import { IoSettingsOutline, IoLogOutOutline  } from 'react-icons/io5'
+import { IoSettingsOutline, IoLogOutOutline } from 'react-icons/io5'
 import { LiaUserFriendsSolid, LiaUser } from 'react-icons/lia'
 import { MdOutlinePrivacyTip } from 'react-icons/md'
 
@@ -23,7 +23,7 @@ export function ModalSettings() {
           <hr className='w-full border hidden md:flex' />
 
           <button className='flex items-start text-Primary bg-gray-300 rounded-2xl hover:cursor-pointer w-full p-2'>
-            <IoSettingsOutline  className=' md:flex' size={24} />
+            <IoSettingsOutline className=' md:flex' size={24} />
             <span className='ml-2 text-xl hidden md:inline'>{t('general')}</span>
           </button>
           <button className='flex items-start hover:text-Primary hover:bg-gray-300 hover:rounded-2xl hover:cursor-pointer w-full p-2'>
@@ -42,7 +42,6 @@ export function ModalSettings() {
             <IoLogOutOutline size={24} />
             <span className='ml-2 text-xl hidden md:inline'>{t('cerrarSesion')}</span>
           </button>
-
         </div>
       </div>
 
@@ -65,6 +64,5 @@ export function ModalSettings() {
         </div>
       </div>
     </div>
-
   )
 }

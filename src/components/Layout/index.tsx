@@ -23,7 +23,7 @@ function Layout() {
   return (
     <>
       <div className='flex flex-col h-screen w-full bg-gray-100 dark:bg-gray-900'>
-        <header className='shrink-0 flex items-center justify-between p-5  bg-Secondary text-white'>
+        <header className='shrink-0 flex items-center justify-between p-5  bg-Secondary dark:bg-SecondaryDark text-white'>
           <h1 className='text-2xl md:ml-16'>
             <Link to='/home'>
               Gollery
@@ -31,28 +31,28 @@ function Layout() {
           </h1>
 
           <nav className='hidden md:flex space-x-10 mr-16'>
-            <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+            <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <BsImages />
               <span className='text-xs'>{t('galeria')}</span>
             </Link>
-            <Link to='/grupos' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+            <Link to='/grupos' className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <LiaUserFriendsSolid />
               <span className='text-xs'>{t('grupos')}</span>
             </Link>
             <button
               onClick={handleSettingsClick}
-              className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+              className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark'>
               <IoSettingsOutline />
               <span className='text-xs'>{t('configuracion')}</span>
             </button>
           </nav>
         </header>
 
-        <main className='flex-grow overflow-y-auto p-4 bg-Background'>
+        <main className='flex-grow overflow-y-auto p-4 bg-Background dark:bg-BackgroundDark'>
           <Outlet />
         </main>
 
-        <footer className='shrink-0 grid grid-cols-3 bg-Secondary h-20 items-center justify-items-center text-center text-white md:hidden'>
+        <footer className='shrink-0 grid grid-cols-3 bg-Secondary dark:bg-SecondaryDark h-20 items-center justify-items-center text-center text-white dark:text-TextDark md:hidden'>
           <Link to='/home' className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
             <BsImages />
             <span className='text-xs'>{t('galeria')}</span>
@@ -63,7 +63,7 @@ function Layout() {
           </Link>
           <button
             onClick={handleSettingsClick}
-            className='flex flex-col items-center justify-center text-2xl hover:text-Primary'>
+            className='flex flex-col items-center justify-center text-2xl hover:text-Primary dark:hover:text-PrimaryDark cursor-pointer'>
             <IoSettingsOutline />
             <span className='text-xs'>{t('configuracion')}</span>
           </button>

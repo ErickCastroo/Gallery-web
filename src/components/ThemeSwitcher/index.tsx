@@ -35,14 +35,14 @@ export function ThemeSelector() {
           key={theme.key}
           onClick={() => setSelected(theme.key)}
           className={`w-6/12 h-5/6 border rounded-lg p-1.5 mt-4 flex flex-col items-center transition ${selected === theme.key
-              ? 'ring-2 ring-Primary bg-blue-50'
+              ? 'ring-2 ring-Primary bg-blue-50 dark:bg-Text'
               : 'hover:border-Secondary'
             }`}
         >
           <div className='w-full h-24 bg-Primary dark:bg-Secondary rounded mb-2'></div>
           <div className='flex items-center'>
             <div
-              className={`w-4 h-4 rounded-full border ${selected === theme.key ? 'bg-Primary' : ''
+              className={`w-4 h-4 rounded-full border mr-2 ${selected === theme.key ? 'bg-Primary' : ''
                 }`}
             ></div>
             <span className='text-sm'>{theme.label}</span>
