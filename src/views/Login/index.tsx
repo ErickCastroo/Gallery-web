@@ -2,6 +2,8 @@ import { useForm } from '@tanstack/react-form'
 import type { AnyFieldApi } from '@tanstack/react-form'
 import { Link } from 'react-router-dom'
 
+import { t } from 'i18next'
+
 function FieldInfo({ field }: { field: AnyFieldApi }) {
   return (
     <>
@@ -29,8 +31,8 @@ function Login() {
       <div className='flex flex-col items-center justify-center h-screen bg-[url("./img/login.jpg")] bg-cover bg-center w-full'>
         <div className="absolute inset-0 bg-white/90"></div>
         <div className="relative z-10 p-4">
-          <h1 className='flex justify-center text-3xl font-bold text-Secondary'>Login</h1>
-          <p className='text-lg mb-5 text-Secondary'>Please enter your credentials</p>
+          <h1 className='flex justify-center text-3xl font-bold text-Secondary'>{t('login.titulo')}</h1>
+          <p className='text-lg mb-5 text-Secondary'>{t('login.subtitulo')}</p>
           <form
             className=''
             onSubmit={async (e) => {
@@ -43,7 +45,6 @@ function Login() {
               }
               else {
                 console.log('Form is not valid')
-
               }
             }}
           >
@@ -67,7 +68,7 @@ function Login() {
                 {(field) => (
                   <>
                     <label htmlFor={field.name} className='flex text-Primary text-lg mt-2'>
-                      Email:
+                      {t('login.correoElectronico')}
                     </label>
                     <input
                       id={field.name}
@@ -103,7 +104,7 @@ function Login() {
                 {(field) => (
                   <>
                     <label htmlFor={field.name} className='flex text-Primary text-lg mt-2'>
-                      Password:
+                      {t('login.contrasena')}
                     </label>
                     <input
                       id={field.name}
@@ -132,18 +133,17 @@ function Login() {
                     className={`bg-Secondary w-full text-white rounded-lg p-2 mt-2 ${canSubmit ? 'hover:bg-Secondary' : 'opacity-50 cursor-not-allowed'
                       }`}
                   >
-                    {isSubmitting ? 'Loading' : 'Login'}
+                    {isSubmitting ? 'Loading' : `${t('login.iniciarSesion')}`}
                   </button>
                   <Link to='/' className='flex justify-center text-Secondary mt-3'>
-                    You forgot your password?
+                    {t('login.olvidasteTuContrasena')}
                   </Link>
                 </>
               )}
             </form.Subscribe>
-            
           </form>
           <Link to='/register' className='flex justify-center text-Secondary mt-3 hover:text-Primary'>
-            Don't have an account? Register
+            {t('login.crearCuenta')}
           </Link>
         </div>
       </div>

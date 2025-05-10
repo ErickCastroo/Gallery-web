@@ -27,5 +27,14 @@
   "idiomas": {
     "espanol": "Spanish",
     "ingles": "English"
+  },
+  "login": {
+    "titulo": "Log in",
+    "subtitulo": "Please log in to your account",
+    "correoElectronico": "Email",
+    "contrasena": "Password",
+    "iniciarSesion": "Log in",
+    "olvidasteTuContrasena": "Forgot your password?",
+    "crearCuenta": "Don't have an account? Create one"
   }
 }

@@ -27,5 +27,14 @@
   "idiomas": {
     "espanol": "Español",
     "ingles": "Inglés"
+  },
+  "login": {
+    "titulo": "Iniciar sesión",
+    "subtitulo": "Inicia sesión en tu cuenta",
+    "correoElectronico": "Correo electrónico",
+    "contrasena": "Contraseña",
+    "iniciarSesion": "Iniciar sesión",
+    "olvidasteTuContrasena": "¿Olvidaste tu contraseña?",
+    "crearCuenta": "¿No tienes una cuenta? Crea una"
   }
 }
